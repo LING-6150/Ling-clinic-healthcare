@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: ling-clinic-backend
+  profiles:
+    active: local
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/ling_clinic
+    username: postgres
+    password: LingPostgres123!
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+
+server:
+  port: 8123
+  servlet:
+    context-path: /api
+
+springdoc:
+  group-configs:
+    - group: 'default'
+      packages-to-scan: com.ling.lingaicodegeneration.controller
+
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn
+
+mybatis-flex:
+  configuration:
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      logic-delete-column: is_delete
+      logic-delete-value: 1
+      logic-normal-value: 0
+      column-style: underline

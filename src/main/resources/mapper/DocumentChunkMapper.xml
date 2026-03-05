@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ling.lingaicodegeneration.mapper.DocumentChunkMapper">
+
+    <insert id="insertChunkWithEmbedding">
+        INSERT INTO document_chunk
+        (document_id, content, embedding, doc_type, symptom_tag, chunk_index, create_time)
+        VALUES
+            (#{chunk.documentId}, #{chunk.content}, #{embedding}::vector,
+             #{chunk.docType}, #{chunk.symptomTag}, #{chunk.chunkIndex}, NOW())
+    </insert>
+
+    <select id="vectorSearch" resultType="com.ling.lingaicodegeneration.model.entity.DocumentChunk">
+    <![CDATA[
+        SELECT id, document_id, content, doc_type, symptom_tag, chunk_index
+        FROM document_chunk
+        ORDER BY embedding <=> #{embedding}::vector
+            LIMIT #{limit}
+        ]]>
+</select>
+
+    <select id="keywordSearch" resultType="com.ling.lingaicodegeneration.model.entity.DocumentChunk">
+        SELECT id, document_id, content, doc_type, symptom_tag, chunk_index
+        FROM document_chunk
+        WHERE content_tsv @@ plainto_tsquery('english', #{keyword})
+        ORDER BY ts_rank(content_tsv, plainto_tsquery('english', #{keyword})) DESC
+            LIMIT #{limit}
+    </select>
+
+    <select id="vectorSearchWithFilter"
+            resultType="com.ling.lingaicodegeneration.model.entity.DocumentChunk">
+        <![CDATA[
+    SELECT id, document_id, content, doc_type, symptom_tag, chunk_index
+    FROM document_chunk
+    WHERE 1=1
+    ]]>
+        <if test="docType != null and docType != ''">
+            AND doc_type = #{docType}
+        </if>
+        <if test="symptomTag != null and symptomTag != ''">
+            AND symptom_tag = #{symptomTag}
+        </if>
+        <![CDATA[
+    ORDER BY embedding <=> #{embedding}::vector
+    LIMIT #{limit}
+    ]]>
+    </select>
+
+    <select id="keywordSearchWithFilter"
+            resultType="com.ling.lingaicodegeneration.model.entity.DocumentChunk">
+        SELECT id, document_id, content, doc_type, symptom_tag, chunk_index
+        FROM document_chunk
+        WHERE content_tsv @@ plainto_tsquery('english', #{keyword})
+        <if test="docType != null and docType != ''">
+            AND doc_type = #{docType}
+        </if>
+        <if test="symptomTag != null and symptomTag != ''">
+            AND symptom_tag = #{symptomTag}
+        </if>
+        ORDER BY ts_rank(content_tsv, plainto_tsquery('english', #{keyword})) DESC
+        LIMIT #{limit}
+    </select>
+
+</mapper>
