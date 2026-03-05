@@ -44,7 +44,6 @@ public class DocumentServiceImpl extends ServiceImpl<DocumentMapper, Document>
     private UserService userService;
 
     private static final int CHUNK_SIZE = 500;
-    private static final int CHUNK_OVERLAP = 50;
 
     @Override
     public Long uploadDocument(MultipartFile file, String docType,
@@ -70,8 +69,8 @@ public class DocumentServiceImpl extends ServiceImpl<DocumentMapper, Document>
         document.setUploadUserId(loginUser.getId());
         this.save(document);
 
-        // 4. 文本分块
-        List<String> chunks = splitIntoChunks(text, CHUNK_SIZE, CHUNK_OVERLAP);
+        // 第四步 文本分块 - 这行改掉 换成了 semanticChunks 方法
+        List<String> chunks = semanticChunks(text, CHUNK_SIZE);
 
         // 5. 批量获取embedding并存入PGVector
         for (int i = 0; i < chunks.size(); i++) {
@@ -133,14 +132,21 @@ public class DocumentServiceImpl extends ServiceImpl<DocumentMapper, Document>
         }
     }
 
-    // 固定大小分块，带overlap
-    private List<String> splitIntoChunks(String text, int chunkSize, int overlap) {
+    // Semantic Chunking：按句子边界分块，保证每个chunk语义完整
+    private List<String> semanticChunks(String text, int maxChunkSize) {
+        String[] sentences = text.split("(?<=[.!?\\n])\\s+");
         List<String> chunks = new ArrayList<>();
-        int start = 0;
-        while (start < text.length()) {
-            int end = Math.min(start + chunkSize, text.length());
-            chunks.add(text.substring(start, end));
-            start += chunkSize - overlap;
+        StringBuilder current = new StringBuilder();
+        for (String sentence : sentences) {
+            if (current.length() + sentence.length() > maxChunkSize
+                    && current.length() > 0) {
+                chunks.add(current.toString().trim());
+                current = new StringBuilder();
+            }
+            current.append(sentence).append(" ");
+        }
+        if (current.length() > 0) {
+            chunks.add(current.toString().trim());
         }
         return chunks;
     }
