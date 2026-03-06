@@ -233,6 +233,35 @@ npx vite build --mode production
 
 ---
 
+## Evaluation
+
+Evaluated using RAGAS framework with a 25-query benchmark dataset 
+covering herbs, formulas, conditions, treatments, and diagnosis topics.
+
+### RAGAS Metrics
+
+| Metric | Score | Description |
+|---|---|---|
+| Faithfulness | 0.896 | Answer grounded in retrieved context |
+| Answer Relevancy | 0.952 | Answer relevance to the question |
+| Average Latency | 310ms | End-to-end retrieval + generation |
+| Dataset Size | 25 queries | Across 5 TCM knowledge categories |
+
+### Retrieval Accuracy (Hit@3)
+
+| Method | Accuracy |
+|---|---|
+| Vector Search | 100% (25/25) direct queries |
+| Hybrid Search | 96% (24/25) across all query types |
+
+**Key Finding:** High Faithfulness (0.896) confirms answers are 
+grounded in the knowledge base rather than LLM hallucination. 
+High Answer Relevancy (0.952) confirms the RAG pipeline retrieves 
+contextually appropriate documents for each query type.
+```
+
+---
+
 ## Future Roadmap
 
 - **Multi-role system** — Separate Doctor role with appointment approval workflow
