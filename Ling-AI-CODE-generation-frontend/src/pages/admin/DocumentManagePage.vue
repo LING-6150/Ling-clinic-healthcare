@@ -7,6 +7,8 @@
             <a-select-option value="herb">Herb</a-select-option>
             <a-select-option value="treatment">Treatment</a-select-option>
             <a-select-option value="diagnosis">Diagnosis</a-select-option>
+            <a-select-option value="formula">Formula</a-select-option>      <!-- 新加 -->
+            <a-select-option value="condition">Condition</a-select-option>  <!-- 新加 -->
             <a-select-option value="general">General</a-select-option>
           </a-select>
         </a-form-item>

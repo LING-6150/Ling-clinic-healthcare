@@ -9,13 +9,13 @@ export async function chatWithRag(
   onToken: (token: string) => void,
   onDone: () => void,
 ) {
-  const response = await fetch('http://localhost:8123/api/rag/chat', {
+  const response = await fetch((import.meta.env.VITE_API_BASE_URL || 'http://localhost:8123/api') + '/rag/chat', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     credentials: 'include',
     body: JSON.stringify(body),
   })
-4
+
   const reader = response.body!.getReader()
   const decoder = new TextDecoder()
 
