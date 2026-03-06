@@ -1,0 +1,245 @@
+TCM Diagnosis & Pattern Differentiation Knowledge Base (For RAG Testing)
+Version: 1.0 (Educational content; not medical advice)
+
+0) Purpose and Safety Notice
+This document is designed as a structured reference text for Retrieval-Augmented Generation (RAG) testing. It summarizes key concepts in Traditional Chinese Medicine (TCM) diagnostics and pattern differentiation. It is NOT a tool for self-diagnosis or treatment. Many symptoms described here can be caused by serious medical conditions that require urgent evaluation. If there are “red flag” symptoms (see Section 10), seek professional medical care immediately.
+
+1) Core Philosophy of TCM Diagnosis
+TCM diagnosis focuses on identifying “patterns” (syndromes) rather than naming a disease entity alone. A pattern is a functional snapshot of how the body’s systems are imbalanced at a given time. The goal is to answer:
+- What is the nature of the imbalance? (Heat vs Cold, Excess vs Deficiency)
+- Where is it located? (Exterior vs Interior, Zang-Fu organs, channels)
+- What substances are involved? (Qi, Blood, Yin, Yang, Body Fluids)
+- What is the pathogenic mechanism? (Stagnation, deficiency, phlegm, dampness, toxin, etc.)
+
+In practice, TCM practitioners combine symptom clusters, tongue observation, pulse characteristics, and lifestyle/context to reach a pattern diagnosis. A single biomedical disease (e.g., migraine, IBS) may correspond to multiple TCM patterns, and one TCM pattern may appear across multiple biomedical diseases.
+
+2) The Four Examinations (Si Zhen: 望闻问切)
+2.1 Inspection (Wang: observing)
+- General appearance: posture, facial color (pale, red, sallow), spirit (Shen), body habitus
+- Tongue: color, shape, coating, moisture, cracks, teeth marks, sublingual veins
+- Skin and eyes: dryness, rashes, sclera color, edema, sweating
+- Movement: tremors, restless agitation, weakness, slow speech
+
+2.2 Listening & Smelling (Wen)
+- Voice strength and clarity, cough sound, breathing patterns
+- Odors: strong foul odor suggests heat/toxin; faint odor may suggest deficiency/cold
+- Wheezing/shortness of breath can relate to Lung Qi deficiency, phlegm, or severe disease
+
+2.3 Inquiry (Wen: asking)
+Key domains:
+- Chief complaint and timeline (onset, progression, triggers)
+- Thermal preference: cold aversion, heat intolerance, fever pattern
+- Sweating: spontaneous, night sweats, no sweat, profuse sweat
+- Appetite, thirst (cold vs warm drinks), taste in mouth
+- Digestion: bloating, nausea, stool quality (loose, dry, foul)
+- Urination: frequency, color, pain
+- Sleep: insomnia type, dreams, waking at specific times
+- Mood: irritability, anxiety, depression, worry
+- Menstrual and reproductive history: cycle, flow, pain, clots, PMS
+- Pain: location, nature (fixed vs wandering), better/worse with pressure, heat/cold
+- Past history, medications, and lifestyle (diet, alcohol, stress, work pattern)
+
+2.4 Palpation (Qie)
+- Pulse diagnosis: rate, depth, strength, width, tension, slipperiness, choppiness
+Common pulse descriptors:
+  - Floating: exterior conditions
+  - Deep: interior conditions
+  - Rapid: heat
+  - Slow: cold
+  - Wiry: liver constraint, pain, stress
+  - Slippery: phlegm/dampness, pregnancy, food stagnation
+  - Thin: blood/yin deficiency
+  - Choppy: blood stasis
+
+3) Eight Principles (Ba Gang)
+The Eight Principles form a high-level map:
+- Exterior vs Interior: surface-level invasion (wind-cold) vs internal organ imbalance
+- Hot vs Cold: heat signs (thirst, red tongue) vs cold signs (cold limbs, pale tongue)
+- Excess vs Deficiency: strong pathogen/obstruction vs weak body/substances
+- Yin vs Yang: summary polarity (Yang = heat/excess/exterior; Yin = cold/deficiency/interior)
+
+Example logic:
+- Chills > fever, no sweat, body aches, floating-tight pulse → Exterior Cold Excess
+- Fever, thirst, yellow coat, rapid pulse → Interior Heat
+- Fatigue, spontaneous sweating, weak pulse → Qi Deficiency
+- Night sweats, dry mouth at night, red tongue with little coat → Yin Deficiency Heat
+
+4) Fundamental Substances & Imbalances
+4.1 Qi
+- Qi deficiency: fatigue, shortness of breath, weak voice, spontaneous sweating
+- Qi stagnation: distention, sighing, mood swings, wiry pulse
+- Qi sinking: prolapse, chronic diarrhea, heaviness
+- Qi rebellion: nausea/vomiting, cough, hiccups (directional disorder)
+
+4.2 Blood
+- Blood deficiency: pale complexion, dizziness, numbness, scanty menses, thin pulse
+- Blood stasis: fixed stabbing pain, dark clots, purple tongue, choppy pulse
+
+4.3 Yin and Yang
+- Yin deficiency: dryness, night sweats, five-center heat, red tongue little coat
+- Yang deficiency: cold intolerance, edema, diarrhea at dawn, pale swollen tongue
+
+4.4 Body Fluids (Jin-Ye)
+- Fluid deficiency: dry skin, constipation, thirst, cracked tongue
+- Damp accumulation: heaviness, sticky stools, greasy tongue coat
+- Phlegm: chest oppression, nodules, dizziness, slippery pulse
+
+5) Zang-Fu Pattern Differentiation (Organ Systems)
+Note: TCM “organs” are functional networks, not identical to anatomical organs.
+
+5.1 Lung (Fei)
+- Lung Qi deficiency: shortness of breath, weak cough, spontaneous sweating
+- Wind-cold attacking Lung: cough with clear sputum, chills, no sweat
+- Wind-heat: sore throat, yellow sputum, fever
+- Phlegm-heat in Lung: thick yellow sputum, chest heat, slippery-rapid pulse
+
+5.2 Spleen (Pi) and Stomach (Wei)
+- Spleen Qi deficiency: poor appetite, bloating, loose stools, fatigue
+- Dampness obstruction: heaviness, sticky stool, greasy coat
+- Food stagnation: foul belching, distention worse after eating
+- Stomach heat: excessive hunger, bad breath, thirst for cold drinks
+- Stomach Yin deficiency: dry mouth, hunger without desire to eat, peeled coat
+
+5.3 Liver (Gan)
+- Liver Qi stagnation: rib-side distention, irritability, PMS, wiry pulse
+- Liver fire rising: headaches, red eyes, anger, bitter taste
+- Liver blood deficiency: dry eyes, cramps, insomnia, scanty menses
+- Liver yang rising: dizziness, tinnitus, headaches, wiry-rapid pulse
+
+5.4 Heart (Xin)
+- Heart blood deficiency: palpitations, insomnia, poor memory
+- Heart Yin deficiency: palpitations, anxiety, night sweats
+- Phlegm misting the mind: mental confusion, heavy sensation, slippery pulse
+
+5.5 Kidney (Shen)
+- Kidney Yin deficiency: low back soreness, night sweats, tinnitus, dry throat
+- Kidney Yang deficiency: cold limbs, edema, low libido, dawn diarrhea
+- Kidney essence deficiency: developmental issues, infertility, weak bones/teeth
+
+6) Classic Frameworks (Higher-Level Differentiation)
+6.1 Six Stages (Shang Han: Taiyang to Jueyin)
+Used for externally contracted cold damage patterns; helps map progression.
+- Taiyang: chills, fever, stiff neck, floating pulse
+- Yangming: high fever, thirst, big pulse, sweating, constipation
+- Shaoyang: alternating chills/fever, bitter taste, rib-side fullness
+- Taiyin: abdominal fullness, diarrhea, cold
+- Shaoyin: deep fatigue, cold extremities (yang deficiency) or heat signs (yin deficiency)
+- Jueyin: mixed hot/cold, thirst with desire to sip, parasitic-like sensations
+
+6.2 Four Levels (Wen Bing: Wei, Qi, Ying, Xue)
+Used for warm heat diseases.
+- Wei level: fever, slight chills, sore throat, thin coat
+- Qi level: high fever, thirst, profuse sweating, yellow coat
+- Ying level: fever worse at night, irritability, faint rash, red tongue
+- Xue level: bleeding, rash, delirium, very red or purple tongue
+
+6.3 Triple Burner (San Jiao)
+Upper burner: Lung/Heart (cough, chest heat)
+Middle burner: Spleen/Stomach (bloating, nausea)
+Lower burner: Liver/Kidney/Intestines (urinary, bowel, gynecologic)
+
+7) Common Mechanisms in “Difficult/Complex” Presentations
+7.1 “Mixed” patterns are common:
+- Deficiency at the root, excess at the branch (e.g., Spleen deficiency with dampness)
+- Cold and heat complex (e.g., alternating symptoms; Shaoyang; Jueyin)
+- Stagnation leading to heat (Qi stagnation transforms into fire)
+
+7.2 Phlegm and dampness are frequent “complicating factors”:
+- Chronic fatigue + brain fog + heaviness → dampness/phlegm plus deficiency
+- Dizziness with nausea and greasy coat → phlegm-damp in middle burner
+
+7.3 Blood stasis is common in chronic pain and fixed symptoms:
+- Fixed stabbing pain, worse at night, purple tongue → blood stasis
+
+7.4 Emotional stress strongly affects patterns:
+- Stress → Liver Qi stagnation → digestive symptoms (Liver overacting on Spleen)
+- Chronic anxiety → Heart Yin/Blood deficiency or phlegm-heat agitation
+
+8) Pattern Maps for Common “Hard-to-Explain” Symptom Clusters (Examples)
+These are NOT diagnoses; they are pattern examples for RAG queries.
+
+8.1 Chronic Fatigue / “Low energy”
+Possible patterns:
+- Spleen Qi deficiency: fatigue after eating, loose stools, pale tongue
+- Qi and blood deficiency: dizziness, pale lips, thin pulse
+- Damp obstruction: heaviness, sticky stools, greasy coat
+- Kidney Yang deficiency: cold intolerance, morning diarrhea, edema
+- Liver Qi stagnation: fatigue + mood swings + distention
+
+Example retrieval cues:
+- “Fatigue + loose stool + poor appetite” → Spleen Qi deficiency
+- “Fatigue + heavy body + greasy tongue coat” → Damp obstruction
+
+8.2 Insomnia (difficulty falling vs staying asleep)
+- Heart blood deficiency: difficulty falling asleep, palpitations, poor memory
+- Heart Yin deficiency: night waking, anxiety, night sweats, red tongue
+- Liver fire: irritability, vivid dreams, bitter taste, red eyes
+- Phlegm-heat: restlessness, heavy head, slippery-rapid pulse
+
+8.3 Headache / Migraine-like patterns
+- Liver yang rising: temples headache, dizziness, irritability, wiry pulse
+- Blood deficiency: dull headache, worse with fatigue, pale tongue
+- Phlegm damp: heavy head, nausea, greasy coat
+- Blood stasis: fixed sharp headache, long duration, purple tongue
+
+8.4 Digestive complaints: bloating, reflux, IBS-like symptoms
+- Liver overacting on Spleen: stress-triggered bloating/diarrhea
+- Spleen deficiency with damp: loose stool, heaviness, fatigue
+- Food stagnation: worse after overeating, foul belching
+- Stomach heat: burning epigastrium, thirst, constipation
+- Cold in middle burner: pain relieved by warmth, preference for hot drinks
+
+8.5 Menstrual irregularities and pelvic pain
+- Blood deficiency: scanty flow, pale color, dizziness
+- Blood stasis: severe stabbing pain, clots, dark flow, purple tongue
+- Liver Qi stagnation: PMS, distention, mood swings
+- Damp-heat: thick discharge, odor, itching, yellow coat
+- Kidney deficiency: irregular cycles with low back soreness
+
+8.6 Skin issues (eczema-like, acne-like patterns)
+- Damp-heat: red inflamed lesions, itching, greasy coat
+- Blood heat: bright red rashes, irritability, thirst
+- Blood deficiency with dryness: dry itchy skin, pale tongue, thin pulse
+- Phlegm-damp: cystic acne tendency, greasy coat
+Note: skin symptoms can reflect allergies, infections, autoimmune disease.
+
+8.7 Palpitations, anxiety, “panic-like” sensations
+- Heart Qi deficiency: palpitations with exertion, shortness of breath
+- Heart blood deficiency: palpitations + insomnia + poor memory
+- Yin deficiency with empty heat: anxiety + night sweats + dry mouth at night
+- Phlegm-heat: agitation, chest oppression, slippery pulse
+
+9) How to Write “RAG-friendly” TCM Data
+For best retrieval, store information as:
+- Symptom cluster → pattern candidates
+- Tongue/pulse cues → pattern reinforcement
+- Key differentiators (what makes pattern A different from B)
+- Red flags that require urgent care
+
+Example chunk-friendly format:
+- Pattern: Spleen Qi deficiency
+  - Key symptoms: poor appetite, bloating after meals, loose stool, fatigue
+  - Tongue: pale, swollen with teeth marks
+  - Pulse: weak
+  - Notes: chronic worry, overthinking, irregular meals
+
+10) Red Flags (Urgent Medical Evaluation Needed)
+Seek urgent care if any of these occur:
+- Chest pain, severe shortness of breath, fainting, signs of stroke
+- High fever with stiff neck, confusion, severe dehydration
+- Severe abdominal pain, black/tarry stools, vomiting blood
+- Sudden severe headache (“worst headache”), neurological deficits
+- Unexplained weight loss, persistent night sweats, significant bleeding
+- Severe depression with self-harm thoughts
+TCM pattern discussion should never delay necessary emergency care.
+
+11) Example RAG Queries (Test Prompts)
+- “Explain the Four Examinations in TCM and how tongue and pulse support pattern differentiation.”
+- “What is the difference between Qi deficiency and Qi stagnation?”
+- “Provide pattern candidates for insomnia with night sweats and dry mouth at night.”
+- “What tongue and pulse signs suggest dampness or phlegm?”
+- “Give pattern examples for menstrual pain with dark clots and stabbing pain.”
+- “Compare Liver Qi stagnation vs Liver fire rising with key distinguishing features.”
+- “List red flags where symptoms should be evaluated urgently rather than treated as TCM imbalance.”
+
+End of document.

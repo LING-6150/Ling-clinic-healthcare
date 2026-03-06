@@ -1,0 +1,420 @@
+Traditional Chinese Medicine Treatment Reference
+Educational content for RAG knowledge base testing.
+Not medical advice.
+
+-------------------------------------------------
+1. Core Treatment Principles in TCM
+-------------------------------------------------
+
+Traditional Chinese Medicine treatment focuses on restoring balance in the body rather than targeting a single symptom. Treatment strategies are based on pattern differentiation.
+
+Key treatment principles include:
+
+1. Tonify deficiency
+2. Clear excess
+3. Regulate Qi circulation
+4. Nourish blood
+5. Balance Yin and Yang
+6. Eliminate pathogenic factors such as dampness, phlegm, heat, or cold
+7. Strengthen organ systems such as the spleen, liver, kidney, and lung.
+
+Treatment methods often combine herbal formulas, acupuncture, diet therapy, lifestyle adjustments, and stress management.
+
+-------------------------------------------------
+2. Spleen and Digestive Disorders
+-------------------------------------------------
+
+Digestive disorders are extremely common in TCM clinical practice. The spleen and stomach are considered the central organs of digestion and energy production.
+
+Common symptoms:
+bloating, poor appetite, loose stool, fatigue, abdominal distention.
+
+Pattern: Spleen Qi Deficiency
+
+Treatment principle:
+tonify spleen Qi and improve digestion.
+
+Common herbal formula:
+Si Jun Zi Tang (Four Gentlemen Decoction)
+
+Key herbs:
+Ginseng
+Atractylodes
+Poria
+Licorice
+
+Expected outcomes:
+improved digestion
+better energy levels
+reduced bloating.
+
+---
+
+Pattern: Spleen Dampness Accumulation
+
+Symptoms:
+heaviness in body
+sticky stool
+brain fog
+fatigue
+thick tongue coating.
+
+Treatment principle:
+dry dampness and strengthen spleen.
+
+Common formula:
+Ping Wei San.
+
+Key herbs:
+Atractylodes
+Magnolia Bark
+Chen Pi
+Licorice.
+
+---
+
+Pattern: Food Stagnation
+
+Symptoms:
+abdominal fullness after eating
+belching
+acid reflux
+bad breath.
+
+Treatment principle:
+promote digestion and move food stagnation.
+
+Common formula:
+Bao He Wan.
+
+-------------------------------------------------
+3. Qi and Blood Deficiency
+-------------------------------------------------
+
+Qi and Blood deficiency is often related to chronic fatigue, dizziness, pale complexion, and weakness.
+
+Pattern: Qi Deficiency
+
+Symptoms:
+fatigue
+shortness of breath
+weak voice
+spontaneous sweating.
+
+Treatment principle:
+tonify Qi.
+
+Common formula:
+Bu Zhong Yi Qi Tang.
+
+Key herbs:
+Astragalus
+Ginseng
+Atractylodes
+Angelica Sinensis.
+
+---
+
+Pattern: Blood Deficiency
+
+Symptoms:
+pale complexion
+dry skin
+dizziness
+insomnia
+scanty menstruation.
+
+Treatment principle:
+nourish blood.
+
+Common formula:
+Si Wu Tang.
+
+Key herbs:
+Angelica Sinensis
+Rehmannia
+White Peony
+Ligusticum.
+
+---
+
+Pattern: Qi and Blood Deficiency Combined
+
+Treatment principle:
+tonify Qi and nourish blood.
+
+Classic formula:
+Ba Zhen Tang.
+
+-------------------------------------------------
+4. Chronic Fatigue and Low Energy
+-------------------------------------------------
+
+Chronic fatigue often involves multiple organ systems.
+
+Possible patterns:
+
+Spleen Qi deficiency
+Kidney Yang deficiency
+Qi and blood deficiency
+Dampness accumulation.
+
+Treatment principles:
+
+strengthen spleen
+tonify kidney
+boost Qi
+eliminate dampness.
+
+Common formulas:
+
+Shen Ling Bai Zhu San
+You Gui Wan
+Liu Jun Zi Tang.
+
+-------------------------------------------------
+5. Insomnia and Anxiety Disorders
+-------------------------------------------------
+
+Sleep disorders are common in modern populations due to stress and lifestyle.
+
+Pattern: Heart Blood Deficiency
+
+Symptoms:
+difficulty falling asleep
+palpitations
+poor memory.
+
+Treatment principle:
+nourish heart blood.
+
+Formula:
+Suan Zao Ren Tang.
+
+---
+
+Pattern: Heart and Kidney Yin Deficiency
+
+Symptoms:
+night sweats
+anxiety
+restlessness
+dry mouth at night.
+
+Treatment principle:
+nourish Yin and calm spirit.
+
+Formula:
+Tian Wang Bu Xin Dan.
+
+---
+
+Pattern: Liver Qi Stagnation
+
+Symptoms:
+irritability
+stress
+difficulty relaxing
+sleep disturbance.
+
+Treatment principle:
+soothe liver and regulate Qi.
+
+Formula:
+Xiao Yao San.
+
+-------------------------------------------------
+6. Female Fertility and Reproductive Health
+-------------------------------------------------
+
+In TCM, fertility is closely related to kidney essence, liver blood, and spleen function.
+
+Common causes of infertility patterns:
+
+Kidney deficiency
+Liver Qi stagnation
+Blood stasis
+Dampness obstruction.
+
+Pattern: Kidney Essence Deficiency
+
+Symptoms:
+irregular periods
+low back pain
+fatigue
+difficulty conceiving.
+
+Treatment principle:
+tonify kidney essence.
+
+Formula:
+Zuo Gui Wan or You Gui Wan.
+
+---
+
+Pattern: Liver Qi Stagnation affecting reproduction
+
+Symptoms:
+PMS
+irregular cycles
+emotional stress.
+
+Treatment principle:
+regulate liver Qi.
+
+Formula:
+Xiao Yao San.
+
+---
+
+Pattern: Blood Stasis in uterus
+
+Symptoms:
+painful periods
+dark clots
+sharp pelvic pain.
+
+Treatment principle:
+invigorate blood circulation.
+
+Formula:
+Gui Zhi Fu Ling Wan.
+
+---
+
+Pattern: Spleen deficiency affecting fertility
+
+Symptoms:
+fatigue
+digestive weakness
+heavy menstrual bleeding.
+
+Treatment principle:
+strengthen spleen and nourish blood.
+
+Formula:
+Ba Zhen Tang.
+
+-------------------------------------------------
+7. Skin Disorders
+-------------------------------------------------
+
+Skin diseases may arise from internal imbalance.
+
+Common patterns:
+
+damp heat
+blood heat
+blood deficiency
+toxin accumulation.
+
+Treatment principles:
+
+clear heat
+eliminate dampness
+cool blood
+detoxify.
+
+Common formulas:
+
+Long Dan Xie Gan Tang
+Huang Lian Jie Du Tang
+Dang Gui Yin Zi.
+
+-------------------------------------------------
+8. Chronic Pain and Musculoskeletal Conditions
+-------------------------------------------------
+
+Pain in TCM is often associated with stagnation of Qi and Blood.
+
+Pattern: Qi Stagnation
+
+Symptoms:
+distending pain
+stress related pain.
+
+Treatment principle:
+move Qi.
+
+Formula:
+Chai Hu Shu Gan San.
+
+---
+
+Pattern: Blood Stasis
+
+Symptoms:
+sharp fixed pain
+worse at night.
+
+Treatment principle:
+invigorate blood circulation.
+
+Formula:
+Xue Fu Zhu Yu Tang.
+
+---
+
+Pattern: Cold obstruction
+
+Symptoms:
+pain relieved by warmth
+worse in cold weather.
+
+Treatment principle:
+warm channels and disperse cold.
+
+Formula:
+Du Huo Ji Sheng Tang.
+
+-------------------------------------------------
+9. Male Reproductive Health
+-------------------------------------------------
+
+Male fertility in TCM is related to kidney essence.
+
+Patterns:
+
+Kidney Yang deficiency
+Kidney Yin deficiency
+Qi stagnation.
+
+Treatment principle:
+
+tonify kidney
+improve circulation.
+
+Common formulas:
+
+Wu Zi Yan Zong Wan
+Jin Gui Shen Qi Wan.
+
+-------------------------------------------------
+10. Lifestyle and Dietary Therapy
+-------------------------------------------------
+
+Treatment is not limited to herbal medicine.
+
+Key lifestyle recommendations include:
+
+balanced diet
+regular sleep schedule
+moderate exercise
+stress reduction
+avoiding excessive cold or greasy foods.
+
+Digestive health is especially important since the spleen and stomach generate Qi and blood.
+
+-------------------------------------------------
+11. Integrative Perspective
+-------------------------------------------------
+
+Modern TCM practitioners often combine traditional approaches with biomedical evaluation.
+
+For persistent or severe symptoms, medical evaluation and laboratory testing are recommended.
+
+TCM treatment works best when combined with healthy lifestyle habits and appropriate medical care.
+
+-------------------------------------------------
+
+End of document

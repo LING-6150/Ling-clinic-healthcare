@@ -34,9 +34,32 @@ const router = createRouter({
           path: '/admin/userManage',
           name: 'adminUserManage',
           component: () => import('@/pages/admin/UserManagePage.vue'),
-          meta: {
-            access: ACCESS_ENUM.ADMIN,
-          },
+          meta: { access: ACCESS_ENUM.ADMIN },
+        },
+        // 新增
+        {
+          path: '/appointment',
+          name: 'appointment',
+          component: () => import('@/pages/appointment/AppointmentPage.vue'),
+          meta: { access: ACCESS_ENUM.USER },
+        },
+        {
+          path: '/my-appointments',
+          name: 'myAppointments',
+          component: () => import('@/pages/appointment/MyAppointmentsPage.vue'),
+          meta: { access: ACCESS_ENUM.USER },
+        },
+        {
+          path: '/admin/documents',
+          name: 'adminDocuments',
+          component: () => import('@/pages/admin/DocumentManagePage.vue'),
+          meta: { access: ACCESS_ENUM.ADMIN },
+        },
+        {
+          path: '/ai-chat',
+          name: 'aiChat',
+          component: () => import('@/pages/AiChatPage.vue'),
+          meta: { access: ACCESS_ENUM.USER },
         },
       ],
     },
